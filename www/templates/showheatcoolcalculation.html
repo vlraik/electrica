@@ -1,0 +1,48 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Your Estimated Heat or cool Load</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeCalculation()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+  <div class="list">
+            <div class="item item-divider">Analysis:
+    <label class="item item-input">
+            <span class="input-label">Length in Meter:- {{hclen}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Width in Meter:- {{hcwid}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Height in Meter:- {{hchei}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Volume is {{volume}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Area in Meter:- {{area}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Load Due to Occupants:- {{load_occu}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Lighting Load:- {{light_load}}</span>
+            </label>
+			<label class="item item-input">
+            <span class="input-label">Sensible Load due to fresh air Circulation W:- {{air_calc}}</span>
+            </label>
+		
+			<label class="item item-input">
+            <span class="input-label">Latent Heat Load on the System (kW):- {{latent_load}}</span>
+            </label>
+
+			<label class="item item-input">
+            <span class="input-label">Total Heating Load W:- {{total_heat}}</span>
+            </label>
+
+			
+
+	
+	</ion-content>
+</ion-modal-view>

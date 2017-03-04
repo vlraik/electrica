@@ -1,0 +1,19 @@
+<ion-view view-title="History">
+  <ion-content>
+  	<div class="card" ng-repeat="item in history">
+  		<div class="item item-divider">
+    		Date: {{item.timestamp}}
+  		</div>
+  		<div class="item item-text-wrap">
+    		Calculation regarding page: {{item.page.page}}
+  		</div>
+      <div class="item item-divider">
+    Result: {{item.result}}
+  </div>
+
+	</div>
+	<div class="card" ng-if="history==0">
+		<strong>No history found</strong>
+	</div>
+  </ion-content>
+</ion-view>

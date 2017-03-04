@@ -1,0 +1,73 @@
+	<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Solar Gain</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeCalculation()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="list">
+            <div class="item item-divider">Analysis:</div>
+    
+
+    <div class="item item-divider">Walls with Windows detail:</div>
+            <label class="item item-input">
+            <span class="input-label">Length in Meter:- {{wwwlen}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Height in Meter:- {{wwwhei}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Area in Meter:- {{wwwarea}}</span>
+            </label>
+    <div class="item item-divider">Walls without Windows detail:</div>
+            <label class="item item-input">
+            <span class="input-label">Length in Meter:- {{wwtwlen}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Height in Meter:- {{wwtwhei}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Area in Meter:- {{wwtwarea}}</span>
+            </label>
+	<div class="item item-divider">Walls Excluding Windows detail:</div>
+			<label class="item item-input">
+            <span class="input-label">Exculding Length:- {{walls_exclude_window_length}}</span>
+            </label>
+			<label class="item item-input">
+            <span class="input-label">Excluding Height:- {{walls_exclude_window_height}}</span>
+            </label>
+            
+			<label class="item item-input">
+            <span class="input-label">Length in Meter:- {{wewlm}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Height in Meter:- {{wewhm}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Area in Meter:- {{wewarea}}</span>
+            </label>
+	<div class="item item-divider"></div>		
+            <label class="item item-input">
+            <span class="input-label">Solar Load without Windows:- {{solar_load}}</span>
+            </label>
+			
+			<label class="item item-input">
+            <span class="input-label">Solar Load Excluding Windows:- {{solar_load_ex_windows}}</span>
+            </label>
+	
+	<div class="item item-divider"></div>		
+    
+			<label class="item item-input">
+            <span class="input-label">Details Addition of Both :- {{addition_of_both}}</span>
+            </label>
+			
+			<label class="item item-input">
+            <span class="input-label">In KW :- {{in_kw}}</span>
+            </label>			
+			
+			<label class="item item-input">
+            <span class="input-label">In TR :- {{in_tr}}</span>
+            </label>			
+	</ion-content>
+</ion-modal-view>

@@ -1,0 +1,29 @@
+<ion-view view-title="Light Calculations">
+  <ion-content>
+  <form ng-submit="lightcalculation()"> 	
+    <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Length of the Room</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="lightappliances.length">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Breadth of the room</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="lightappliances.breadth">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">height of the Room</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="lightappliances.height">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Light Ceiling</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="lightappliances.lightceiling">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Working height of the floor</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="lightappliances.workingheight">
+  </label>
+  </div>
+  <button class="button button-block button-positive" type="submit" ng-click="lightcalculation()">Check your Consumption</button>
+  </form>
+</ion-content>
+</ion-view>

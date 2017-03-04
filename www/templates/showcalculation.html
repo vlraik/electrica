@@ -1,0 +1,20 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Your Estimated Calculations and Billing</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeCalculation()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="list">
+    <div class="item item-divider">Analysis:
+    <label class="item item-input">
+            <span class="input-label">Estimated Power Consumption equals: {{result}}</span>
+            </label>
+    <label class="item item-input">
+            <span class="input-label">Estimated Cost: Rs.{{result2}} (Approximation for Mumbai)</span>
+            </label>
+            </div>
+            </div>
+  </ion-content>
+</ion-modal-view>

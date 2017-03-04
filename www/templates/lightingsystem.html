@@ -1,0 +1,45 @@
+<ion-view view-title="Lighting System Calculations">
+  <ion-content>
+  <form ng-submit="lscalculation()"> 	
+    <div class="list">
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Length of the Room</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="lsappliances.length">
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Width of the Room</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="lsappliances.width">
+  </label>
+  
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Height of the Room</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="lsappliances.height">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Light Ceiling</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="lsappliances.lightceiling">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Working height of the floor</span>
+    <input type="text" placeholder="Enter Quantity" ng-model="lsappliances.workingheight">
+  </label>
+  
+  <label class="item item-input item-stacked-label">  
+    <span class="input-label">Light Used :-</span>
+<ion-radio ng-model="lsappliances.choice" ng-value="1">MH</ion-radio>
+<ion-radio ng-model="lsappliances.choice" ng-value="2">CFL 15</ion-radio>
+<ion-radio ng-model="lsappliances.choice" ng-value="3">LED 13</ion-radio>
+  </label>
+  
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Utilization Factor</span>
+    <input type="text" placeholder="Enter Quantity" ng-model="lsappliances.utifact">
+  </label>
+  
+  </div>
+  <button class="button button-block button-positive" type="submit" ng-click="lscalculation()">Check your Consumption</button>
+  </form>
+</ion-content>
+</ion-view>

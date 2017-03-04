@@ -1,0 +1,26 @@
+<ion-view view-title="Solar Gain Calculations">
+  <ion-content>
+  <form ng-submit="sgcalculation()"> 	
+    <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Walls with windows Enter Length</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="sgappliances.wwwlength">
+  </label>
+    <label class="item item-input item-stacked-label">
+    <span class="input-label">Walls with windows Enter Height</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="sgappliances.wwwheight">
+  </label>
+    <label class="item item-input item-stacked-label">
+    <span class="input-label">Walls without windows Enter Length</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="sgappliances.wwtwlength">
+  </label>
+    <label class="item item-input item-stacked-label">
+    <span class="input-label">Walls without windows Enter Height</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="sgappliances.wwtwheight">
+  </label>
+  
+  </div>
+  <button class="button button-block button-positive" type="submit" ng-click="sgcalculation()">Check your Solar Gain</button>
+  </form>
+</ion-content>
+</ion-view>

@@ -1,0 +1,27 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Your Estimated Light Calculations and Billing</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeCalculation()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="list">
+            <div class="item item-divider">Analysis:
+            <label class="item item-input">
+            <span class="input-label">HM:- {{hm}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Room Index:- {{ri}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">CFL 15:-<p>Number of lights required:- {{cfl15pc}}</p><p>Power Consumption:- {{pwr15}}</p></span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">CFL 20:-<p>Number of lights required:- {{cfl20pc}}</p><p>Power Consumption:- {{pwr20}}</p></span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">CFL 26:-<p>Number of lights required:- {{cfl26pc}}</p><p>Power Consumption:- {{pwr26}}</p></span>
+            </label>
+  </ion-content>
+</ion-modal-view>

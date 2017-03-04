@@ -1,0 +1,53 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Your Estimated AC Calculations and Billing</h1>
+    <div class="buttons">
+      <button class="button button-clear button-primary" ng-click="closeCalculation()">Close</button>
+    </div>
+  </ion-header-bar>
+  
+  <ion-content class="padding">
+          <div class="list">
+            <div class="item item-divider">Analysis:
+            <label class="item item-input">
+            <span class="input-label">Volume is {{volume}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Area is {{area}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Air requirement for {{acappliances.occupant}} Occupant</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Total air requirement {{airrequirement}} </span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Sensible load due to occupant {{totalactivity}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Latent Load due to occupant{{latentmetabolicrate}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Sensible Load due to fresh air Circulation {{latentmetabolicrate}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Latent Heat Load on the System {{ldonsys}}</span>
+            </label>
+            
+            <div class="item item-divider">Lightning Load:</div>
+            
+            <label class="item item-input">
+            <span class="input-label">Solar Heat Gain Through Walla and Ceiling {{solarheatgain}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Total Heating Load {{totalheatload}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Capacity of A/C {{capacityofac}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Excess Capacity {{excesscapacity}}</span>
+            </label>            
+          </div>
+  </ion-content>
+</ion-modal-view>

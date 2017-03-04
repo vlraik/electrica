@@ -1,0 +1,32 @@
+<ion-view>
+<div class="bar bar-header">
+  <button class="button button-icon icon ion-navicon"></button>
+  <div class="h1 title">Header Buttons</div>
+  <button class="button button-clear button-positive">Edit</button>
+	</div>
+  <ion-content>
+  <form ng-submit="accalculation3()"> 	
+    <div class="list">
+    <label class="item item-input item-stacked-label">
+    <span class="input-label">Number of Occupant</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="acappliances.occupant">
+  </label>
+    <label class="item item-input item-stacked-label">
+    <span class="input-label">Length of the Room</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="acappliances.length">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Breadth of the room</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="acappliances.breadth">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">height of the Room</span>
+    <input type="text" placeholder="Enter Quantity" value="0" ng-model="acappliances.height">
+  </label>
+  <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-click="accalculation3()">Check your Consumption</button>
+  </label>
+  </div>
+  </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,55 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-positive">
+    <h1 class="title">Your Estimated Light Calculations and Billing</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeCalculation()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+  	<div class="list">
+        <div class="item item-divider">Analysis:
+        <label class="item item-input">
+            <span class="input-label">Length in Meter:- {{len}}</span>
+            </label>
+        <label class="item item-input">
+            <span class="input-label">Width in Meter:- {{wid}}</span>
+            </label>
+        <label class="item item-input">
+            <span class="input-label">Height in Meter:- {{hei}}</span>
+            </label>
+        <label class="item item-input">
+            <span class="input-label">Volume in Meter:- {{volume}}</span>
+            </label>
+        <label class="item item-input">
+            <span class="input-label">Area in Meter:- {{area}}</span>
+            </label>
+        <label class="item item-input">
+            <span class="input-label">Air Requirement for Occupants:- {{airreq}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Number of Air Changes:- {{n_air_changes}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Blower Fan Required:- {{blower_fan_req}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Total Human Pollution:- {{human_pollution}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Pollution due to Buiding Material:- {{poll_build}}</span>
+            </label>
+			
+            <label class="item item-input">
+            <span class="input-label">G:- {{g}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">CI:- {{volume}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">V:- {{volume}}</span>
+            </label>
+            <label class="item item-input">
+            <span class="input-label">Number of Air Changes:- {{n_air_changes}}</span>
+            </label>
+	</ion-content>
+</ion-modal-view>

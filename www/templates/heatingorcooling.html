@@ -1,0 +1,57 @@
+<ion-view view-title="Heat and Cool Load">
+    <ion-content>
+  
+  <form ng-submit="hccalculation()"> 	
+    <div class="list">
+
+	<label class="item item-input item-select">
+	<div class="input label">Select Room Name:</div>
+	<select>
+		<option selected>STP Room 1</option>
+		<option>STP 1 to 12</option>
+		<option>STP 13 to 18</option>
+		<option>Meter Room</option>
+		<option>Society Office</option>
+		<option>STP 19 to 20</option>
+		<option>Entrance Loobby</option>
+		<option>Meter Room</option>
+		<option>STP 21 to 24</option>
+		<option>STP 25 and 26</option>
+		<option>STP 27 and 28</option>
+		<option>Entrance Loobby</option>
+		<option>Meter Room</option>
+		<option>Service Room</option>
+		<option>STP 19 and 30</option>
+		<option>Stair Case-1</option>
+		<option>Stair Case-2</option>
+	</select>
+  </label>
+
+	
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Length of the Room</span>
+    <input type="text" placeholder="Enter Quantity in ft" value="0" ng-model="hcappliances.length">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Width of the room</span>
+    <input type="text" placeholder="Enter Quantity in ft" value="0" ng-model="hcappliances.width">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Height of the Room</span>
+    <input type="text" placeholder="Enter Quantity in ft" value="0" ng-model="hcappliances.height">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Number of occupants</span>
+    <input type="text" placeholder="Number of occupants" value="0" ng-model="hcappliances.occupants">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Air Requirement</span>
+    <input type="text" placeholder="Air Requirment" value="0" ng-model="hcappliances.air_req">
+  </label>  
+  </div>
+  <button class="button button-block button-positive" type="submit" ng-click="hccalculation()">Examine your Heat or Cool Load Details</button>
+    </form>
+</ion-content>
+</ion-view>
+
+
